@@ -50,27 +50,3 @@ for epoch in range(num_epochs):
 print('\nresult:');
 print(true_w, net[0].weight.data());            # 真实w 训练的w
 print(true_b, net[0].bias.data());              # 真实b 训练的b
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
