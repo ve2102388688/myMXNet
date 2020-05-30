@@ -10,7 +10,8 @@ train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size)
 # 初始化模型参数
 num_inputs = 28*28
 num_outputs = 10
-W = nd.random.normal(scale=0.01, shape=(num_inputs, num_outputs))
+# W = nd.random.normal(scale=0.01, shape=(num_inputs, num_outputs))
+W = nd.zeros(shape=(num_inputs, num_outputs))
 b = nd.zeros(num_outputs)
 W.attach_grad()            # 提前分配内存
 b.attach_grad()            # 提前分配内存

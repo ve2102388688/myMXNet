@@ -9,8 +9,10 @@ train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size)
 # 定义网络病初始化
 drop_prob1, drop_prob2 = 0.5, 0.2
 net = nn.Sequential()
-net.add(nn.Dense(1024, activation='relu'), nn.Dropout(drop_prob1),   # 在第一次全连接层丢弃
-        nn.Dense(1024, activation='relu'), nn.Dropout(drop_prob2), nn.Dense(10))
+net.add(nn.Dense(256, activation='relu'), nn.Dropout(drop_prob1),   # 在第一次全连接层丢弃
+        nn.Dense(256, activation='relu'), nn.Dropout(drop_prob1),   # 在第一次全连接层丢弃
+        nn.Dense(256, activation='relu'), nn.Dropout(drop_prob1),   # 在第一次全连接层丢弃
+        nn.Dense(256, activation='relu'), nn.Dropout(drop_prob2), nn.Dense(10))
 net.initialize(init.Normal(sigma=0.01))
 
 # 定义损失函数
@@ -22,7 +24,7 @@ lr = 0.5
 trainer = gluon.Trainer(net.collect_params(), 'sgd', {'learning_rate':lr})
 
 # 训练
-num_epochs = 100
+num_epochs = 15
 d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, batch_size, None, None, trainer)
 
 

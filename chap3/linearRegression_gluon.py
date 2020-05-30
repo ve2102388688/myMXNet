@@ -7,7 +7,7 @@ from mxnet.gluon import loss as gloss       # 损失函数
 
 # 生成数据集
 num_inputs = 2;                                                         # 特征数
-num_samples = 10000000;                                                     # 样本数
+num_samples = 1000;                                                     # 样本数
 true_w = [2, -3.4];
 true_b = 4.2;
 features = nd.random.normal(scale=1, shape=(num_samples, num_inputs));  # 1000*2

@@ -9,7 +9,8 @@ num_inputs = 2;                                                         # 特征
 num_examples = 1000;                                                    # 样本数
 true_w = [2, -3.4];
 true_b = 4.2;
-X = nd.random.normal(scale=1, shape=(num_examples, num_inputs));        # 1000*2
+# X = nd.random.normal(scale=1, shape=(num_examples, num_inputs));        # 1000*2
+X = 2*nd.ones(shape=(num_examples, num_inputs));        # 假如权重一样
 y = nd.dot(X, nd.transpose(nd.array(true_w))) + true_b;                 # y = X*W + b
 y += nd.random.normal(0, 0.01, shape=y.shape);                          # y = X*W + b + noise
 print(X[0], y[0]);
