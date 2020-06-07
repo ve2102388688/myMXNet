@@ -5,6 +5,7 @@ import sys                                      # 系统信息
 import time
 
 # 获取数据集 第一次自动下载
+# ~/.mxnet/datasets/fashion-mnist/
 mnist_train = gdata.vision.FashionMNIST(train=True)
 mnist_test = gdata.vision.FashionMNIST(train=False)
 
