@@ -32,11 +32,16 @@ epoch 3, loss 0.9026, train acc 0.637, test acc 0.763, time 44.9 sec
 epoch 4, loss 0.6344, train acc 0.758, test acc 0.810, time 44.2 sec
 epoch 5, loss 0.5812, train acc 0.785, test acc 0.833, time 44.2 sec
 
+# batch_size = 32
+epoch 1, loss 0.9997, train acc 0.614, test acc 0.117, time 71.2 sec
+epoch 2, loss 0.4566, train acc 0.828, test acc 0.867, time 69.6 sec
+epoch 3, loss 0.3231, train acc 0.878, test acc 0.887, time 70.0 sec
+epoch 4, loss 0.2844, train acc 0.894, test acc 0.888, time 69.6 sec
+epoch 5, loss 0.2509, train acc 0.905, test acc 0.900, time 69.0 sec
+
+
 # lr = 0.5 失效
 epoch 1, loss 2.3218, train acc 0.112, test acc 0.101, time 50.3 sec
 epoch 2, loss 2.3018, train acc 0.106, test acc 0.100, time 43.8 sec
 epoch 3, loss 2.3040, train acc 0.107, test acc 0.100, time 44.0 sec
 epoch 4, loss 2.3018, train acc 0.107, test acc 0.100, time 43.8 sec
-
-
-

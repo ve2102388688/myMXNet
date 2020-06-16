@@ -11,8 +11,8 @@ net = nn.Sequential()
 net.add(nn.Conv2D(channels=6, kernel_size=5, activation='sigmoid'), nn.MaxPool2D(pool_size=2, strides=2),
        nn.Conv2D(channels=16, kernel_size=5, activation='sigmoid'), nn.MaxPool2D(pool_size=2, strides=2),
        # Dense默认将(N*C*H*W)->(N,C*H*W)
-       # nn.Dense(120, activation='sigmoid'),
-       nn.Dense(60, activation='sigmoid'),
+       nn.Dense(120, activation='sigmoid'),
+       nn.Dense(84, activation='sigmoid'),
        nn.Dense(10))
 
 # 一个样本测试(1*1*32*32)
