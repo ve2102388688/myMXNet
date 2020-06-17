@@ -1,4 +1,9 @@
 {
     "python.pythonPath": "/home/topeet/anaconda3/envs/gluon/bin/python",
-    "editor.fontSize": 16
+    "bracketPairColorizer.forceIterationColorCycle": true,
+    "bracketPairColorizer.highlightActiveScope": true,
+    "files.associations": {
+    
+    },
+    "git.ignoreLimitWarning": true
 }
